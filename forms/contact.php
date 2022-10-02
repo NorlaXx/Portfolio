@@ -8,9 +8,9 @@
     $sendMail = mail($receiving_email_address, $_POST["subject"], $_POST["message"], "From:contact@portfoliorochefort.com" . "\r\n" . "Reply-to:" . $_POST["email"]);
     //Si l'email a été envoyé
     if($sendMail){
-      echo("<div class=\"sent-message\">Votre message a été envoyé, Merci !</div>");
+      echo("<p>Votre message a été envoyé, Merci !</p>");
     }else{
-      echo("<div class=\"error-message\">Votre message n'a pas été envoyé");
+      echo("<p>Votre message n'a pas été envoyé </p>");
     }
   }
 ?>
