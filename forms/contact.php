@@ -9,6 +9,8 @@
     //Si l'email a été envoyé
     if($sendMail){
       echo("<div class=\"sent-message\">Votre message a été envoyé, Merci !</div>");
+    }else{
+      echo("<div class=\"error-message\">Votre message n'a pas été envoyé");
     }
   }
 ?>
